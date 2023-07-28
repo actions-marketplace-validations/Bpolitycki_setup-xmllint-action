@@ -1,0 +1,10 @@
+name: "Setup xmllint"
+description: "Installs xmllint on the runner"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Install xmllint
+      run: |
+        sudo apt update
+        sudo apt install -y libxml2-utils
